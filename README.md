@@ -1,6 +1,11 @@
 # ListJob-DMP
 Simple Android Application using Java
 
+Due to Facebook SDK and Play Service login, please download the app inside
+  /app/keystore and app/ folder.
+If you want to build this broject, please use keystore inside
+  /app/keystore and app/ folder.
+
 Technology Used:
 - Facebook SDK
 - Google Play Service
