@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginSuperExtraSmall">2dp</dimen>
+    <dimen name="marginExtraSmall">4dp</dimen>
+    <dimen name="marginSmall">8dp</dimen>
+    <dimen name="marginMediumSmall">12dp</dimen>
+    <dimen name="marginMedium">16dp</dimen>
+    <dimen name="marginMediumLarge">32dp</dimen>
+    <dimen name="marginLarge">48dp</dimen>
+    <dimen name="marginExtraLarge">64dp</dimen>
+    <dimen name="marginSuperExtraLarge">128dp</dimen>
+
+    <dimen name="textExtraSmall">10sp</dimen>
+    <dimen name="textSmall">12sp</dimen>
+    <dimen name="textStandardSmall">14sp</dimen>
+    <dimen name="textStandard">16sp</dimen>
+    <dimen name="textMedium">18sp</dimen>
+    <dimen name="textMediumLarge">24sp</dimen>
+    <dimen name="textLarge">32sp</dimen>
+    <dimen name="textExtraLarge">64sp</dimen>
+</resources>

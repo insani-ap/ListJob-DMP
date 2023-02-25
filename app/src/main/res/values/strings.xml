@@ -1,0 +1,29 @@
+<resources>
+    <string name="facebook_app_id">8787410341300655</string>
+    <string name="facebook_client_token">c6a6c3ed282a6d2dfc1ff5776c36608f</string>
+    <string name="app_name">List Job Test</string>
+
+    <string name="OR">OR</string>
+    <string name="name">Placeholder Name</string>
+    <string name="logout">Logout</string>
+
+    <string name="facebookLogin">Continue with Facebook</string>
+    <string name="googleLogin">Sign in with Google</string>
+
+    <string name="accountLabel">Account</string>
+    <string name="jobListLabel">Home</string>
+    <string name="accountTitle">ACCOUNT</string>
+    <string name="jobListTitle">JOB LIST</string>
+
+    <string name="search">Search</string>
+    <string name="fulltime">Fulltime</string>
+    <string name="location">Location</string>
+    <string name="applyFilter">Apply Filter</string>
+
+    <string name="company">Company</string>
+    <string name="jobSpec">Job Specification</string>
+    <string name="jobDetail">Job Detail</string>
+
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+</resources>

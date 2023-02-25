@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bottomNavMenu">
+        <item name="android:drawablePadding">@dimen/marginSmall</item>
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">@dimen/marginSmall</item>
+    </style>
+    <style name="labelHeader">
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/marginMedium</item>
+    </style>
+    <style name="labelName">
+        <item name="android:textSize">@dimen/textMediumLarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/marginMedium</item>
+    </style>
+    <style name="labelSearch">
+        <item name="android:textSize">@dimen/textStandard</item>
+        <item name="android:paddingStart">@dimen/marginMedium</item>
+        <item name="android:paddingEnd">@dimen/marginMedium</item>
+    </style>
+
+    <style name="labelTitle">
+        <item name="android:textSize">@dimen/textStandard</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="labelBody">
+        <item name="android:textSize">@dimen/textStandardSmall</item>
+    </style>
+
+    <style name="circleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
