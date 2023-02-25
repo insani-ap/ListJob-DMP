@@ -2,6 +2,7 @@ package com.insani.listjobtest.modul.home.job;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -108,7 +109,8 @@ public class JobListFragment extends BaseFragment implements JobListViewContract
                         if (isDone) {
                             Snackbar.make(mBinding.getRoot(), "All data already loaded", Snackbar.LENGTH_LONG).show();
                         } else {
-                            mPresenter.loadList(++page);
+                            allAdapter.addLoading();
+                            new Handler().postDelayed(() -> mPresenter.loadList(++page), 2000);
                         }
                     }
                 }
