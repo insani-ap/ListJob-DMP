@@ -12,5 +12,6 @@ Technology Used:
 - Retrofit 2
 - Glide 4
 - View Pager & Tab Layout
+- View Model
 
 Feel free to ask me if you need anything.

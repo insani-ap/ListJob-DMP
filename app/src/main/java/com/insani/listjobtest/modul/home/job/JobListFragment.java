@@ -11,6 +11,7 @@ import android.view.animation.AnimationUtils;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,6 +23,7 @@ import com.insani.listjobtest.core.model.JobModel;
 import com.insani.listjobtest.databinding.FragmentJobListBinding;
 import com.insani.listjobtest.modul.home.job.adapter.JobAdapter;
 import com.insani.listjobtest.modul.home.job.detail.JobDetailActivity;
+import com.insani.listjobtest.modul.home.job.vm.JobViewModel;
 import com.insani.listjobtest.util.Const;
 import com.insani.listjobtest.util.Injection;
 
@@ -39,6 +41,8 @@ public class JobListFragment extends BaseFragment implements JobListViewContract
 
     private int page = 1;
     private boolean isDone = false;
+
+    private JobViewModel jobViewModel;
 
     public JobListFragment() {}
 
@@ -84,8 +88,12 @@ public class JobListFragment extends BaseFragment implements JobListViewContract
     }
 
     private void initializeData() {
+        jobViewModel = new ViewModelProvider(this).get(JobViewModel.class);
+        jobViewModel.setmRepo(Injection.provideJobRepo(requireContext()));
+        jobViewModel.getData(page);
+        jobViewModel.getJobList().observe(getViewLifecycleOwner(), this::listLoaded);
+
         mPresenter = JobListPresenter.getInstance(Injection.provideJobRepo(requireContext()), this);
-        mPresenter.loadList(page);
     }
 
     @Override
